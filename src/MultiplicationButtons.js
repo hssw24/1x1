@@ -26,12 +26,12 @@ const styles = {
     display: 'flex',
     flexWrap: 'wrap',
     justifyContent: 'center',
-    gap: '10px',
+    gap: '3px', // 10
     marginTop: '20px',
   },
   button: {
-    padding: '10px 15px', // Verkleinertes Padding für mobile Ansicht
-    fontSize: '14px', // Kleinere Schriftgröße
+    padding: '12px 18px', // 10 15 Verkleinertes Padding für mobile Ansicht
+    fontSize: '18px', // 14 Kleinere Schriftgröße
     cursor: 'pointer',
     borderRadius: '6px',
     backgroundColor: '#4CAF50',
