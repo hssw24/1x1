@@ -6,6 +6,8 @@ const App = () => {
   const [factor2, setFactor2] = useState(2);
   const [correctAnswer, setCorrectAnswer] = useState(factor1 * factor2);
   const [feedback, setFeedback] = useState('');
+  const [correctCount, setCorrectCount] = useState(0); // Anzahl richtiger Antworten
+  const [totalCount, setTotalCount] = useState(0); // Gesamtanzahl der Aufgaben
 
   // Generiere eine neue Frage
   const generateQuestion = () => {
@@ -19,7 +21,9 @@ const App = () => {
 
   // Überprüfe die Antwort
   const handleAnswer = (answer) => {
+    setTotalCount(totalCount + 1); // Aktualisiere die Gesamtanzahl der Aufgaben
     if (answer === correctAnswer) {
+      setCorrectCount(correctCount + 1); // Zähle richtige Antworten
       setFeedback('Richtig! Gut gemacht.');
       setTimeout(generateQuestion, 2000); // Neue Frage nach 2 Sekunden
     } else {
@@ -39,6 +43,9 @@ const App = () => {
       </h2>
       <MultiplicationButtons onAnswerClick={handleAnswer} />
       {feedback && <h3 style={styles.feedback}>{feedback}</h3>}
+      <div style={styles.stats}>
+        <h3>Statistik: {correctCount}/{totalCount}</h3>
+      </div>
     </div>
   );
 };
@@ -60,6 +67,9 @@ const styles = {
   feedback: {
     color: '#666',
     fontSize: '18px',
+    marginTop: '20px',
+  },
+  stats: {
     marginTop: '20px',
   },
 };

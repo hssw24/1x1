@@ -26,18 +26,18 @@ const styles = {
     display: 'flex',
     flexWrap: 'wrap',
     justifyContent: 'center',
-    gap: '15px',
+    gap: '10px',
     marginTop: '20px',
   },
   button: {
-    padding: '15px 25px',
-    fontSize: '18px',
+    padding: '10px 15px', // Verkleinertes Padding für mobile Ansicht
+    fontSize: '14px', // Kleinere Schriftgröße
     cursor: 'pointer',
-    borderRadius: '8px',
+    borderRadius: '6px',
     backgroundColor: '#4CAF50',
     color: 'white',
     border: 'none',
-    width: '90px', // optimiert für mobile Ansicht
+    width: '70px', // Kleinere Breite, damit sie auf den Bildschirm passen
     textAlign: 'center',
   },
 };
