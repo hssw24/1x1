@@ -37,9 +37,9 @@ const App = () => {
 
   return (
     <div style={styles.container}>
-      <h1 style={styles.heading}>Multiplication Practice</h1>
+      <h1 style={styles.heading}>1 x 1 - Übung</h1>
       <h2 style={styles.question}>
-        Was ist {factor1} × {factor2}?
+        {factor1} × {factor2} = ?
       </h2>
       <MultiplicationButtons onAnswerClick={handleAnswer} />
       {feedback && <h3 style={styles.feedback}>{feedback}</h3>}
