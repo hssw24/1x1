@@ -26,7 +26,7 @@ const styles = {
     display: 'flex',
     flexWrap: 'wrap',
     justifyContent: 'center',
-    gap: '3px', // 10
+    gap: '2px', // 10
     marginTop: '20px',
   },
   button: {
@@ -37,7 +37,7 @@ const styles = {
     backgroundColor: '#4CAF50',
     color: 'white',
     border: 'none',
-    width: '80px', // 70 Kleinere Breite, damit sie auf den Bildschirm passen
+    width: '78px', // 70 Kleinere Breite, damit sie auf den Bildschirm passen
     textAlign: 'center',
   },
 };
