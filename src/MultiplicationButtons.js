@@ -31,13 +31,13 @@ const styles = {
   },
   button: {
     padding: '12px 18px', // 10 15 Verkleinertes Padding für mobile Ansicht
-    fontSize: '18px', // 14 Kleinere Schriftgröße
+    fontSize: '20px', // 14 Kleinere Schriftgröße
     cursor: 'pointer',
     borderRadius: '6px',
     backgroundColor: '#4CAF50',
     color: 'white',
     border: 'none',
-    width: '75px', // 70 Kleinere Breite, damit sie auf den Bildschirm passen
+    width: '80px', // 70 Kleinere Breite, damit sie auf den Bildschirm passen
     textAlign: 'center',
   },
 };
