@@ -37,7 +37,7 @@ const styles = {
     backgroundColor: '#4CAF50',
     color: 'white',
     border: 'none',
-    width: '78px', // 70 Kleinere Breite, damit sie auf den Bildschirm passen
+    width: '75px', // 70 Kleinere Breite, damit sie auf den Bildschirm passen
     textAlign: 'center',
   },
 };
